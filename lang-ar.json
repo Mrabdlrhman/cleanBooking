@@ -1,0 +1,105 @@
+{
+  "en":"EN",
+  "jumbTitle": "حجز لتنظيف المنزل",
+  "services": "الخدمات",
+  "cleanInfo": "معلومات  الخدمة",
+  "manyCleaner": "كم عدد عمال النظافة التي تحتاجها؟",
+
+  "longCleanr": "إلى متى تحتاج منظفك للبقاء؟",
+
+  "oneHour": "ساعة واحدة",
+  "twoeHour": "ساعتان",
+  "threeeHour": "3 ساعات",
+  "fourHour": "4 ساعات",
+  "fiveHour": "5 ساعات",
+  "sixHour": "6 ساعات",
+  "matrClean": "هل تحتاج إلى مواد تنظيف؟",
+  "yesMatrClean": "نعم",
+  "noMatrClean": "لا",
+  "choosExtra": "اختر ميزات إضافية",
+  "matrAed": "المواد 10 درهم لساعة",
+  "matrSavFiveAed": "20 ساعة ووفر 5٪ 475 درهم  لكل شهر",
+  "matrSavTenAed": "50 ساعة ووفر 10 ٪ 1225 درهم  في الشهر",
+  "specificReqst": "هل لديك أي تعليمات تنظيف محددة؟",
+
+ 
+  "staff": "موظفين",
+  "chooseCleaner": "اختر من طاقم العمل",
+  "fivExprinc": "خمس سنوات من الخبرة في التنظيف",
+  "fourExprinc": "أربع سنوات من الخبرة في التنظيف",
+  "threeExprinc": "ثلاث سنوات خبرة في التنظيف",
+  "oneExprinc": "ثلاث سنوات خبرة في التنظيف",
+
+  "dateTime": "التاريخ",
+  "startDateTime": "متى تريد وقت بداية التنظيف ؟",
+  "endtDateTime": "متى تريد وقت انتهاء التنظيف ؟",
+
+  "personal": "تواصل",
+  "personalInfo": "المعلومات الشخصية:",
+  "personalName": "الاسم",
+  "selectCity": "اختر مدينتك",
+
+  "chooseCity": "دبي",
+  "personalEmail": "البريد الالكتروني",
+  "personalPhone": "رقم الهاتف",
+  "promoCode": "الرمز الترويجي",
+
+  "locatAdress": "حدد موقع عنوانك",
+  "payment": "الدفع",
+  "paymentInfo": "معلومات الدفع:",
+  "crditCard": "Credit Card",
+  "holderName": "الاسم",
+  "cardNum": "رقم البطاقة",
+  "cvCode": "رمز تحقق البطاقة",
+  "expirDate": "تاريخ انتهاء الصلاحية",
+  "dateMonth": "الشهر",
+  "dateYear": "السنة",
+
+  "confirmInfo": "تاكيد الحجز",
+  "confirmDetails": "تفاصيل الحجز:",
+  "servicDetails": "تفاصيل الخدمة",
+  "cleanNames": "عدد المنظفين :",
+  "duration": "المدة الزمنية:",
+  "matrials": "مواد النظافة :",
+  "extraFeatures": "ميزات اضافية :",
+  "dateTimeAdress": "الوقت والتاريخ / العنوان",
+  "confStarClean": "وقت البدء :",
+  "confEndClean": "وقت الانتهاء :",
+  "confAdress": "عنوان المنزل :",
+  "confPayment": "الدفع",
+  "confCarType": "نوع البطاقة :",
+  "readAccept": "لقد قرأت وقبلت",
+  "termCond": " الشروط والأحكام",
+  "privaPolic": "وسياسة الخصوصية.",
+
+
+  "siteMap": "خريطة الموقع",
+  "booking": "حجز",
+  "myBooking": "حجزي",
+  "about": "من نحن",
+  "contactus": "تواصل معنا",
+
+  "footInfo": "معلومات",
+  "footTerm": "الشروط والأحكام",
+  "footPrivcy": "سياسة الخصوصية",
+  "canWeUse": "كيف يمكننا استخدام",
+  "discont": "خصم",
+  "footFaq": "الاسئلة المتكررة",
+  "footContacUs": "تواصل معنا",
+  "footAdress": "العنوان",
+  "footAdressInfo": "الظبي للتنظيف ، 06 شارع هاي ، <br> فيكتوريا ، الإمارات العربية المتحدة.",
+  "footEmaiUs": "راسلنا",
+  "rightReserv": "© 2019 الظبي. جميع الحقوق محفوظة"
+
+
+
+
+
+
+
+
+
+
+
+  
+}

@@ -1,0 +1,105 @@
+{
+  "en":"AR",
+  "jumbTitle": "Booking Home Cleaning",
+  "services": "Services",
+  "cleanInfo": "Clean Information:",
+  "manyCleaner": "How many cleaners do you need?",
+
+  "longCleanr": "How long do you need your cleaner to stay?",
+
+  "oneHour": "1 hours",
+  "twoeHour": "2 hours",
+  "threeeHour": "3 hours",
+  "fourHour": "4 hours",
+  "fiveHour": "5 hours",
+  "sixHour": "6 hours",
+  "matrClean": "Do you require cleaning materials?",
+  "yesMatrClean": "Yes",
+  "noMatrClean": "No",
+  "choosExtra": "Choose extra features",
+  "matrAed": "Materials 10 AED \\ Hour",
+  "matrSavFiveAed": "20 hour save 5 % 475 AED\\Per Month",
+  "matrSavTenAed": "50 hour save 10 % 1225 AED\\Per Month",
+  "specificReqst": "Do you have any specific cleaning instructions?",
+
+ 
+  "staff": "Staff",
+  "chooseCleaner": "Choose Your Cleaner:",
+  "fivExprinc": "Five years' experience cleaning",
+  "fourExprinc": "Four years' experience cleaning",
+  "threeExprinc": "Three years' experience cleaning",
+  "oneExprinc": "One years' experience cleaning",
+
+  "dateTime": "Date & Time",
+  "startDateTime": "When would you like your cleaning start?",
+  "endtDateTime": "When would you like your cleaning end?",
+
+  "personal": "Personal",
+  "personalInfo": "Personal Information:",
+  "personalName": "Name",
+  "selectCity": "Select your city",
+
+  "chooseCity": "Dubai",
+  "personalEmail": "Email",
+  "personalPhone": "Phone",
+  "promoCode": "Promo Code",
+
+  "locatAdress": "Locate your address",
+  "payment": "Payment",
+  "paymentInfo": "Payment Information:",
+  "crditCard": "Credit Card",
+  "holderName": "Holder Name",
+  "cardNum": "Card Number",
+  "cvCode": "CVC",
+  "expirDate": "Expiry Date",
+  "dateMonth": "Month",
+  "dateYear": "Year",
+
+  "confirmInfo": "Confirm",
+  "confirmDetails": "Confirm Details:",
+  "servicDetails": "Service details",
+  "cleanNames": "Cleaners Number :",
+  "duration": "Duration :",
+  "matrials": "Material :",
+  "extraFeatures": "Extra Features :",
+  "dateTimeAdress": "Datetime / Address",
+  "confStarClean": "Start Clean :",
+  "confEndClean": "End Clean :",
+  "confAdress": "Home Address :",
+  "confPayment": "Payment",
+  "confCarType": "Card Type :",
+  "readAccept": "I have read and accepted the",
+  "termCond": "Terms & Conditions",
+  "privaPolic": "Privacy Policy",
+
+
+  "siteMap": "Sitemap",
+  "booking": "Booking",
+  "myBooking": "My Booking",
+  "about": "About Us",
+  "contactus": "Contact Us",
+
+  "footInfo": "Information",
+  "footTerm": "Terms & conditions",
+  "footPrivcy": "Privacy policy",
+  "canWeUse": "How Can We Use",
+  "discont": "Discount",
+  "footFaq": "FAQ",
+  "footContacUs": "Contact Us",
+  "footAdress": "Address",
+  "footAdressInfo": "Al-dhabi-cleaning, 06 Highley St,<br> Victoria, UAE.",
+  "footEmaiUs": "E-mail Us",
+  "rightReserv": "© 2019 AL-Zabey All rights reserved."
+
+
+
+
+
+
+
+
+
+
+
+  
+}
