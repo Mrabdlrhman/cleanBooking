@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title data-localize="jumbTitle"></title>
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/roboto-font.css">
+	<link rel="stylesheet" type="text/css"
+		href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		
+	<!-- Main Style Css -->
+	
+
+
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+
+        <!-- Map Style Css -->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+	<link rel='stylesheet'
+		href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css'
+		type='text/css' />
+
+		<!-- General js  -->
+		
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+		
+
+
+
+
+
+
+</head>
+
+<body>
+	
+		<nav class="navbar navbar-light bg-light">
+				<a data-localize="en" class="navbar-brand  p-2  text-white" href="./arIndex.html"></a>
+		</nav>
+	<div class="page-content" style="background:#F6F9FB">
+		
+		<div class="wizard-v3-content">
+			
+			<div class="wizard-form">
+				<div class="wizard-header">
+						<div class="jumbotron">
+								<div class="container">
+								  <h1 data-localize="jumbTitle" class="display-4"></h1>
+								  <p class="lead mt-4"></p>
+									
+								</div>
+						</div>
+				</div>
+				<form class="form-booking" action="#" method="post">
+					<div id="form-total">
+						<!-- SECTION 1 -->
+						<h2>
+							<span class="step-icon"><i class="far fa-building"></i></span>
+							<span data-localize="services" class="step-text"></span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 data-localize="cleanInfo"></h3>
+								<div class="form-group">
+									<label data-localize="manyCleaner" for="formCleanNum"></label>
+									<select class="form-control" id="formCleanNum">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label data-localize="longCleanr" for="formDuration"></label>
+									<select class="form-control" id="formDuration">
+										<option data-localize="oneHour"></option>
+										<option data-localize="twoeHour" selected></option>
+										<option data-localize="threeeHour"></option>
+										<option data-localize="fourHour"></option>
+										<option data-localize="fiveHour"></option>
+										<option data-localize="sixHour"> </option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label data-localize="matrClean" for="exampleForm"></label><br>
+									<div class="btn-group btn-block btn-group-toggle" data-toggle="buttons">
+										<label style="outline: none;box-shadow: none"
+											class="btn btn-outline-secondary  active">
+
+											<label data-localize="noMatrClean"></label>
+											<input  type="radio" name="options" class="checkMatrial" value="No" checked>
+										
+										</label>
+										<label style="outline: none;box-shadow: none"
+											class="btn btn-outline-secondary ">
+											<label  data-localize="yesMatrClean"></label>
+											<input type="radio" name="options" class="checkMatrial" value="Yes">
+										</label>
+
+									</div>
+
+								</div>
+								<div class="form-group">
+
+									<label data-localize="choosExtra" for="formExtra"></label>
+									<select class="form-control" id="formExtra">
+										<option data-localize="matrAed" value="Materials 10 AED \ Hour"></option>
+										<option data-localize="matrSavFiveAed" value="20 hour save 5 % 475 AED\Per Month"></option>
+										<option data-localize="matrSavTenAed" value="50 hour save 10 % 1225 AED\Per Month"></option>
+
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label data-localize="specificReqst" for="FormControlTextarea1"></label>
+									<textarea class="form-control" id="FormControlTextarea1" rows="3"
+										placeholder="Special requirements"></textarea>
+								</div>
+							</div>
+						</section>
+						<!-- SECTION 2 -->
+						<h2>
+							<span class="step-icon"><i class="fa fa-user-tie"></i></span>
+							<span data-localize="staff" class="step-text" style="padding-left: 7px;"></span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 data-localize="chooseCleaner"></h3>
+								<div class="row">
+									<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+										<div class="card" style="width: 13rem;">
+											<div class="osahan-user text-center">
+												<div class="osahan-user-media">
+													<img class="mb-3 rounded-pill shadow-sm mt-1"
+														src="https://bootdey.com/img/Content/avatar/avatar6.png"
+														alt="gurdeep singh osahan" width="128" height="128">
+													<div class="osahan-user-media-body">
+														<h6 class="mb-2">Edward Singh</h6>
+														<p data-localize="fivExprinc" class="mb-1"></p>
+													</div>
+												</div>
+											</div>
+											<hr>
+											<label class="container">
+												<input class="staffs" type="checkbox" name="extras" checked
+													value="Edward">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+
+									</div>
+									<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+										<div class="card" style="width: 13rem;">
+											<div class="osahan-user text-center">
+												<div class="osahan-user-media">
+													<img class="mb-3 rounded-pill shadow-sm mt-1"
+														src="https://bootdey.com/img/Content/avatar/avatar5.png"
+														alt="gurdeep singh osahan" width="128" height="128">
+													<div class="osahan-user-media-body">
+														<h6 class="mb-2">Nasreen Singh</h6>
+														<p data-localize="threeExprinc" class="mb-1"></p>
+													</div>
+												</div>
+											</div>
+											<hr>
+											<label class="container">
+												<input class="staffs" type="checkbox" name="extras" checked
+													value="Nasreen">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+
+									</div>
+									<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+										<div class="card" style="width: 13rem;">
+											<div class="osahan-user text-center">
+												<div class="osahan-user-media">
+													<img class="mb-3 rounded-pill shadow-sm mt-1"
+														src="https://bootdey.com/img/Content/avatar/avatar6.png"
+														alt="gurdeep singh osahan" width="128" height="128">
+													<div class="osahan-user-media-body">
+														<h6 class="mb-2">Banward Singh</h6>
+														<p data-localize="fourExprinc" class="mb-1"></p>
+													</div>
+												</div>
+											</div>
+											<hr>
+											<label class="container">
+												<input class="staffs" type="checkbox" name="extras" value="Banward">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+
+									</div>
+									<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+										<div class="card" style="width: 13rem;">
+											<div class="osahan-user text-center">
+												<div class="osahan-user-media">
+													<img class="mb-3 rounded-pill shadow-sm mt-1"
+														src="https://bootdey.com/img/Content/avatar/avatar5.png"
+														alt="gurdeep singh osahan" width="128" height="128">
+													<div class="osahan-user-media-body">
+														<h6 class="mb-2">Heba Singh</h6>
+														<p data-localize="oneExprinc" class="mb-1"></p>
+													</div>
+												</div>
+											</div>
+											<hr>
+											<label class="container">
+												<input class="staffs" type="checkbox" name="extras" value="Heba">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+
+									</div>
+								</div>
+
+
+							</div>
+						</section>
+						<!-- SECTION 3 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-calendar-note"></i></span>
+							<span data-localize="dateTime" class="step-text"></span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3></h3>
+								<div style="overflow:hidden;">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-md-12">
+												<label data-localize="startDateTime" class="labelDate" for="datetimepicker12"></label>
+												<div id="datetimepicker12"></div>
+												<input type="hidden" name="date" id="my_hidden_input" value="">
+
+											</div>
+											<div class="col-md-12">
+												<label data-localize="endtDateTime" class="labelDate" for="atetimepicker3"></label>
+												<div id="datetimepicker3"></div>
+												<input type="hidden" name="date" id="my_hidden_input2" value="">
+
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+						</section>
+						<!-- SECTION 4 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-lock"></i></span>
+							<span data-localize="personal" class="step-text"></span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 data-localize="personalInfo" class="mb-3"></h3>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label data-localize="personalName" for="name"></label>
+										<input type="text" class="form-control" id="name"  required>
+									</div>
+									<div class="form-group col-md-6">
+										<label data-localize="selectCity" for="city"></label>
+										<select class="form-control" id="city">
+											<option data-localize="chooseCity"></option>
+
+										</select>
+									</div>
+
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label data-localize="personalEmail" for="email"></label>
+										<input type="email" class="form-control" id="email"
+											required>
+									</div>
+									<div class="form-group col-md-6">
+										<label data-localize="personalPhone" for="phone"></label>
+										<input type="text" class="form-control" id="phone"
+											maxlength="10" required>
+									</div>
+
+
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-12">
+										<label data-localize="promoCode" for="code"></label>
+										<input type="text" class="form-control" id="code">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-12">
+											<label data-localize="locatAdress" for="map"></label>
+										<div id='map' style='width: 100%; height: 230px;'></div>
+									</div>
+								</div>
+
+
+
+							</div>
+						</section>
+						<!-- SECTION 5 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+							<span data-localize="payment" class="step-text"></span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 data-localize="paymentInfo"></h3>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<input type="radio" class="checkPay" name="radio1" id="pay-1" value="Credit Card" checked>
+										<label  class="pay-1-label" for="pay-1"><img src="./images/masterCard.png"
+												alt="pay-1">Credit Card</label>
+
+
+										<input type="radio" class="checkPay" name="radio1" id="pay-2" value="Paypal">
+										<label class="pay-2-label" for="pay-2"><img src="./images/payPal.png"
+												alt="pay-2">Paypal</label>
+									</div>
+								</div>
+								<div class="form-row">
+										<div class="form-group col-md-6">
+											<label data-localize="holderName" for="holder"></label>
+											<input type="text" class="form-control" id="holder" required>
+										</div>
+										<div class="form-group col-md-6">
+											<label data-localize="cardNum" for="cardNum"></label>
+											<input type="text" class="form-control" id="cardNum" required>
+										</div>
+									
+	
+									</div>
+								<div class="form-row">
+										<div class="form-group col-md-12">
+											<label data-localize="cvCode" for="cvc"></label>
+											<input type="text" class="form-control" id="cvc" placeholder="Card verification Cod" required>
+										</div>
+							
+								</div>
+								<div class="form-row">
+										<div class="form-group col-md-6">
+											
+												<label data-localize="expirDate" for="date"></label>
+												<select class="form-control"  name="month_1" id="month_1">
+													<option data-localize="dateMonth" value="Month" disabled selected></option>
+		
+													<option value="Jan">Jan</option>
+													<option value="Feb">Feb</option>
+													<option value="Mar">Mar</option>
+													<option value="Apr">Apr</option>
+													<option value="May">May</option>
+													<option value="Jun">Jun</option>
+													<option value="Jul">Jul</option>
+													<option value="Aug">Aug</option>
+													<option value="Sept">Sept</option>
+													<option value="Oct">Oct</option>
+													<option value="Nov">Nov</option>
+													<option value="Dec">Dec</option>
+												</select>
+										
+											
+									</div>
+									<div class="form-group col-md-6">
+											<label for="date"></label>
+											<select class="form-control mt-2" name="year_1" id="year_1">
+													<option data-localize="dateYear" value="Year" disabled selected></option>
+													<option value="2019">2019</option>
+													<option value="2020">2020</option>
+													<option value="2021">2021</option>
+													<option value="2022">2022</option>
+													<option value="2023">2023</option>
+												</select>
+									</div>
+								</div>
+							
+
+							
+							
+							</div>
+						</section>
+						<!-- SECTION 6 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+							<span data-localize="confirmInfo" class="step-text"></span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 data-localize="confirmDetails"></h3>
+							
+								<ul class="list-group list-group-flush">
+										<li data-localize="servicDetails" class="list-group-item titleConfirm"></li>
+										<li class="list-group-item">
+
+												<label data-localize="cleanNames" class="text-muted"></label><label class="text-muted" id="cleanrNum-val"></label><br>
+
+												<label data-localize="duration" class="text-muted"></label><label class="text-muted" id="duration-val"></label><br>
+	
+												<label data-localize="matrials" class="text-muted"></label><label class="text-muted" id="material-val"></label><br>
+	
+												<label data-localize="extraFeatures" class="text-muted"></label><label lass="text-muted" id="extra-val"></label>
+										</li>
+										
+				
+								</ul>
+								<ul class="list-group list-group-flush">
+										<li data-localize="dateTimeAdress" class="list-group-item titleConfirm"></li>
+										<li class="list-group-item">
+												<label data-localize="confStarClean" class="text-muted"></label><label class="text-muted" id="startDatetime-val"></label><br>
+
+												<label data-localize="confEndClean" class="text-muted"></label><label class="text-muted" id="endDatetime-val"></label><br>
+	
+												<label data-localize="confAdress" class="text-muted"></label><label class="text-muted" id="homeAdress-val"></label>
+										</li>
+										
+				
+								</ul>
+								<ul class="list-group list-group-flush">
+										<li data-localize="confPayment" class="list-group-item titleConfirm"></li>
+										<li class="list-group-item">
+												<label data-localize="confCarType" class="text-muted"></label><label class="text-muted" id="cardType-val"></label><br><br>
+
+											<p class="text-muted ">Total : <label id="total-val" class="totalAed">264 AED</label></p>
+
+											<p class="text-muted">After Promo Code : <label id="afterPromo-val">224 AED</label></p>
+
+									
+										</li>
+										
+				
+								</ul>
+
+								<ul class="list-group list-group-flush">
+										<li class="list-group-item text-muted">
+											<input type="checkbox" name="check" class="mr-2"> 
+											<label data-localize="readAccept"></label>
+											<a href="#"><span data-localize="termCond"></span></a> and 
+											
+											<a href="#"><span data-localize="privaPolic"></span></a>
+										</li>
+											
+									</ul>
+						
+							</div>
+						</section>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Footer -->
+	<footer class="bg-white">
+			<div class="container py-5">
+			  <div class="row py-4">
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<img src="./images/ded.png" alt="" width="120" class="mb-3"><br>
+					<img src="./images/TelrSecure.png" alt="" width="120" class="mb-3">
+				  
+				  <ul class="list-inline mt-4">
+					<li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
+					<li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
+					<li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="#" target="_blank" title="linkedIn"><i class="fab fa-linkedin"></i></a></li>
+					
+				  </ul>
+				</div>
+				<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+				  <h6 data-localize="siteMap" class="font-weight-bold mb-4"></h6>
+				  <ul class="list-unstyled mb-0">
+					<li class="mb-2"><a data-localize="booking" href="#" class="text-muted"></a></li>
+					<li class="mb-2"><a data-localize="myBooking" href="#" class="text-muted"></a></li>
+					<li class="mb-2"><a data-localize="about" href="about.html" class="text-muted"></a></li>
+					<li class="mb-2"><a data-localize="contactus" href="contact-01.html" class="text-muted"></a></li>
+				  </ul>
+				</div>
+				<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+				  <h6 data-localize="footInfo" class="font-weight-bold mb-4"></h6>
+				  <ul class="list-unstyled mb-0">
+					<li class="mb-2"><a data-localize="footTerm" href="#" class="text-muted"></a></li>
+					<li class="mb-2"><a data-localize="footPrivcy" href="#" class="text-muted"></a></li>
+					<li class="mb-2"><a data-localize="canWeUse" href="#" class="text-muted"></a></li>
+					<li class="mb-2"><a data-localize="discont" href="#" class="text-muted"></a></li>
+					<li class="mb-2"><a data-localize="footFaq" href="#" class="text-muted"></a></li>
+				  </ul>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-lg-0">
+				  <h6 data-localize="footContacUs" class=" font-weight-bold mb-4"></h6>
+				  <h6 data-localize="footAdress"></h6>
+				  <p data-localize="footAdressInfo" class="text-muted small">
+						
+				 </p>
+				  <h6 data-localize="footEmaiUs"></h6>
+				  <p class="text-muted">
+						<ul class="list-unstyled mb-0">
+						<li><a href ="mailto:Info@al-dhabi-cleaning.com?subject = Feedback&body = Message" class="text-muted small">Info@al-dhabi-cleaning.com</a></li>
+						
+						<li><a href ="mailto:Support@al-dhabi-cleaning.com?subject = Feedback&body = Message" class="text-muted small">Support@al-dhabi-cleaning.com</a></li>
+					   </ul>	
+				 </p>
+				  <div class="p-1 rounded border">
+					<div class="input-group">
+					  <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+					  <div class="input-group-append">
+						<button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		
+			<!-- Copyrights -->
+			<div class="bg-light py-4">
+			  <div class="container text-center">
+				<p data-localize="rightReserv" class="text-muted mb-0 py-2"></p>
+			  </div>
+			</div>
+		  </footer>
+		
+
+
+
+
+
+	<!-- Map js  -->
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+	
+	<!-- General js  -->
+	<script src="js/jquery.localize.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="./js/main.js"></script>
+	
+
+
+
+</body>
+
+</html>
