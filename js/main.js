@@ -156,7 +156,7 @@ $(function () {
     geocoder.on('error', function (e) {
         console.log('Error is', e.error);
     });
-    $("[data-localize]").localize("lang", { skipLanguage: "en" })
-    // $("[data-localize]").localize("lang", { language: "en" });
+    // $("[data-localize]").localize("lang", { skipLanguage: "en" })
+    $("[data-localize]").localize("lang", { language: "en" });
    
 });
