@@ -1,39 +1,92 @@
+
 $(function () {
-    $("#form-total").steps({
-        headerTag: "h2",
-        bodyTag: "section",
-        transitionEffect: "fade",
-        enableAllSteps: true,
-        autoFocus: true,
-        transitionEffectSpeed: 500,
-        titleTemplate: '<div class="title">#title#</div>',
-        labels: {
-            previous: 'Previous',
-            next: 'Next Step',
-            finish: 'Submit',
-            current: ''
-        },
-        onStepChanging: function (event, currentIndex, newIndex) {
+    var langText=$(".getLang").text();
 
-            /*To add new one just copy the id from html and get the value of it*/
-            var cleanNum = $('#formCleanNum').val();
-            var duration = $('#formDuration').val();
-            var extrFeature = $('#formExtra').val();
-            var matrial = $('input[name=options]:checked').val();
-            var cardType = $('input[name=radio1]:checked').val();
-            
-          
-            $('#cleanrNum-val').text(cleanNum);
-            $('#duration-val').text(duration);
-            $('#extra-val').text(extrFeature);
-            $('#material-val').text(matrial);
-            $('#cardType-val').text(cardType);
-
+    if(langText==="EN"){
        
+        $("section,footer,span,li,.display-4").addClass("fontForArab");
+        $(".chnageToArab").addClass("dirForArab");
 
-            return true;
-        }
-    });
+        $("#form-total").steps({
+            headerTag: "h2",
+            bodyTag: "section",
+            transitionEffect: "fade",
+            enableAllSteps: true,
+            autoFocus: true,
+            transitionEffectSpeed: 500,
+            titleTemplate: '<div class="title">#title#</div>',
+            labels: {
+                previous: 'للخلف',
+                next: 'التالي',
+                finish: 'تاكيد',
+                current: ''
+            },
+            onStepChanging: function (event, currentIndex, newIndex) {
+                
+                 /*To add new one just copy the id from html and get the value of it*/
+                var cleanNum = $('#formCleanNum').val();
+                var duration = $('#formDuration').val();
+                var extrFeature = $('#formExtra').val();
+                var matrial = $('input[name=options]:checked').val();
+                var cardType = $('input[name=radio1]:checked').val();
+    
+                $('#cleanrNum-val').text(cleanNum);
+                $('#duration-val').text(duration);
+                $('#extra-val').text(extrFeature);
+                $('#material-val').text(matrial);
+                $('#cardType-val').text(cardType);
+    
+    
+                return true;
+            }
+        });
+        $("[data-localize]").localize("lang", { language: "ar" });
+
+        $(".actions ul li a").addClass("fontForArab");
+
+    }else{
+        $("#form-total").steps({
+            headerTag: "h2",
+            bodyTag: "section",
+            transitionEffect: "fade",
+            enableAllSteps: true,
+            autoFocus: true,
+            transitionEffectSpeed: 500,
+            titleTemplate: '<div class="title">#title#</div>',
+            labels: {
+                previous: 'Previous',
+                next: 'Next Step',
+                finish: 'Submit',
+                current: ''
+            },
+            onStepChanging: function (event, currentIndex, newIndex) {
+    
+                /*To add new one just copy the id from html and get the value of it*/
+                var cleanNum = $('#formCleanNum').val();
+                var duration = $('#formDuration').val();
+                var extrFeature = $('#formExtra').val();
+                var matrial = $('input[name=options]:checked').val();
+                var cardType = $('input[name=radio1]:checked').val();
+                
+              
+                $('#cleanrNum-val').text(cleanNum);
+                $('#duration-val').text(duration);
+                $('#extra-val').text(extrFeature);
+                $('#material-val').text(matrial);
+                $('#cardType-val').text(cardType);
+    
+           
+    
+                return true;
+            }
+        });
+
+        // $("section,footer,span,li,.display-4,.actions ul li").removeClass("fontForArab");
+        // $("section").removeClass("dirForArab");
+    }
+
+   
+
 
    
 
@@ -156,8 +209,10 @@ $(function () {
     geocoder.on('error', function (e) {
         console.log('Error is', e.error);
     });
-    // $("[data-localize]").localize("lang", { skipLanguage: "en" })
+ 
+
+    
+    // $("[data-localize]").localize("lang", { language: "en" });
    
    
 });
-$("[data-localize]").localize("lang", { language: "en" });
