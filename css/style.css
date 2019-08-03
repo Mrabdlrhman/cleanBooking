@@ -1,4 +1,14 @@
 
+@font-face {
+	font-family: "flat";
+	src: url('../fonts/flat/JF-Flat-regular.eot');
+	src: url('../fonts/flat/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/flat/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+	url('../fonts/flat/JF-Flat-regular.woff') format('woff'),
+	url('../fonts/flat/JF-Flat-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
 body {
 	margin:  0;
 	
@@ -585,16 +595,17 @@ body {
   .fa-twitter,.fa-facebook,.fa-instagram,.fa-linkedin,.fa-paper-plane{
 	  color: #3CD3AD;
   }
-  .btn-circle {
-    width: 30px;
-    height: 30px;
-    padding: 6px 0px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.42857;
-}
+
 .navbar-brand{
 	background: linear-gradient(to right, #4CB8C4, #3CD3AD);
 	border-radius: 20px
+}
+.fontForArab{
+	font-family: flat;
+}
+.dirForArab{
+	direction: rtl;
+}
+.dirForClockMap{
+	direction: ltr!important;
 }
